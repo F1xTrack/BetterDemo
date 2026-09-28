@@ -36,6 +36,7 @@ secrets.json
 appsettings.*.local.json
 
 # Per-machine tooling, assistant traces, temporary builds, and logs
+.docs/
 .codex/
 .claude/
 .cursor/
