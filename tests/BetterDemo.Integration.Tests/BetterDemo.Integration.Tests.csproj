@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>BetterDemo.RepositoryRoot</_Parameter1>
+      <_Parameter2>$(MSBuildProjectDirectory)\..\..</_Parameter2>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BetterDemo.Audio\BetterDemo.Audio.csproj" />
+    <ProjectReference Include="..\..\src\BetterDemo.Capture\BetterDemo.Capture.csproj" />
+    <ProjectReference Include="..\..\src\BetterDemo.Core\BetterDemo.Core.csproj" />
+    <ProjectReference Include="..\..\src\BetterDemo.Interop\BetterDemo.Interop.csproj" />
+    <ProjectReference Include="..\..\src\BetterDemo.Remote\BetterDemo.Remote.csproj" />
+    <ProjectReference Include="..\..\src\BetterDemo.App\BetterDemo.App.csproj" />
+  </ItemGroup>
+</Project>

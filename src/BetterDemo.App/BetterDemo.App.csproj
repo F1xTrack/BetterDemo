@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>BetterDemo.App</RootNamespace>
+    <AssemblyName>BetterDemo.App</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\BetterDemo.ico</ApplicationIcon>
+    <Platforms>x64</Platforms>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>false</EnableMsixTooling>
+    <WindowsPackageType>None</WindowsPackageType>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\BetterDemo-DemoCard.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\BetterDemo-Brand.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\BetterDemo.ico" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="QRCoder" Version="1.8.0" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.260224002" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.8249" />
+    <ProjectReference Include="..\BetterDemo.Core\BetterDemo.Core.csproj" />
+    <ProjectReference Include="..\BetterDemo.Audio\BetterDemo.Audio.csproj" />
+    <ProjectReference Include="..\BetterDemo.Capture\BetterDemo.Capture.csproj" />
+    <ProjectReference Include="..\BetterDemo.Interop\BetterDemo.Interop.csproj" />
+    <ProjectReference Include="..\BetterDemo.Remote\BetterDemo.Remote.csproj" />
+  </ItemGroup>
+</Project>

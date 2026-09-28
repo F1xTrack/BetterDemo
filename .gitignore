@@ -1,0 +1,52 @@
+# IDE and operating-system state
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+Thumbs.db
+Desktop.ini
+
+# Build output and package caches
+**/bin/
+**/obj/
+**/build/
+**/.gradle/
+**/out/
+TestResults/
+artifacts/
+publish/
+*.pdb
+*.apk
+*.aab
+
+# Local configuration, signing material, and secrets
+.env
+.env.*
+!.env.example
+local.properties
+*.keystore
+*.jks
+*.p12
+*.pfx
+*.pem
+secrets.json
+appsettings.*.local.json
+
+# Per-machine tooling, assistant traces, temporary builds, and logs
+.codex/
+.claude/
+.cursor/
+.aider*/
+.codegraph/
+.omo/
+.tmp-codex/
+.build-temp/
+*.log
+*.tmp
+*.temp
+
+# Local UI captures can contain private desktop or Discord content
+docs/qa-evidence/

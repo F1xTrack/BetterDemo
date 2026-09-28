@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>BetterDemo.Audio</RootNamespace>
+    <AssemblyName>BetterDemo.Audio</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BetterDemo.Core\BetterDemo.Core.csproj" />
+    <ProjectReference Include="..\BetterDemo.Interop\BetterDemo.Interop.csproj" />
+  </ItemGroup>
+</Project>

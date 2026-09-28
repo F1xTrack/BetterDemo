@@ -1,0 +1,13 @@
+<Application
+    x:Class="BetterDemo.App.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="StudioCardFill" Color="#FF1D222B" />
+            <SolidColorBrush x:Key="StudioCardStroke" Color="#FF343B47" />
+            <SolidColorBrush x:Key="StudioMutedText" Color="#FFAAB4C2" />
+            <SolidColorBrush x:Key="StudioAccent" Color="#FF4CC9F0" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
